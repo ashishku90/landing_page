@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1670527200668-ad4b53a1aefb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRvd25sb2FkfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rbga(0,0,0,0.295);
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 10%;
+}
+
+.text h1{
+    font-weight: 600px;
+    font-size: 4vw;
+}
+
+.text .image{
+    background-image: url(https://images.unsplash.com/photo-1581714274708-91159b457086?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRvd25sb2FkfGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+    width: 220px;
+    height: 300px;
+}
+
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rtext p{
+    font-size: 12px;
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+
+}
+
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1657392175510-cc69ba3275c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRvd25sb2FkfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+}
+
+.b1 p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images.unsplash.com/photo-1565367267466-29c9004fc71f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRvd25sb2FkfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+
+}
+
+.b2 .up p{
+    color: white;
+    text-align: center;
+    padding: 15%;
+}
+
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://media.istockphoto.com/id/864944042/photo/data-transferring.webp?b=1&s=170667a&w=0&k=20&c=vGZhouRHgtnj7GU8dHbmFm1rcv_WoChtZTZip5IZ250=);
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rbga(255,255,255,0.344);
+}
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://plus.unsplash.com/premium_photo-1679785652725-f04e0bdce85b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG93bmxvYWQlMjB3YWxscGFwZXIlMjBnbGFzc3xlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position:center;
+}
+
+.b3 .overlay{
+    justify-content: right; 
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vh 3vh;
+}
+
+.b3 .overlay p{
+    padding: 1.2vh;
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left:initial ;
+    }
+}
+
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+
+    }
+    .text image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 up{
+        min-height: 40vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+    
+
+
+}
